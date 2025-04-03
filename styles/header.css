@@ -25,3 +25,11 @@
     border-inline: none;
     justify-content: space-between;
 }
+
+
+@media (max-width: 700px) {
+    #secondary {
+        display: none;
+    }
+
+}

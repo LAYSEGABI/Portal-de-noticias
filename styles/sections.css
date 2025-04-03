@@ -102,14 +102,68 @@ aside {
 }
 
 #more {
-    
+
     margin-top: 32px;
+
     h3 {
         margin-top: 8px;
     }
+
     img {
         width: 72px;
         aspect-ratio: 1/1;
         object-fit: cover;
     }
+}
+
+@media (max-width: 700px) {
+
+    #featured {
+        display: flex;
+        flex-direction: column;
+
+
+        .banner-2 {
+            grid-template-columns: 1fr;
+
+        }
+    }
+
+    #weekly {
+        align-items: center;
+        justify-content: center;
+
+        &>div {
+            grid-template-columns: 1fr;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+    }
+
+    #ia {
+
+        h3 {
+            margin-top: 10px;
+        }
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Número máximo de linhas */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: rgba(255, 255, 255, 0.664);
+            text-transform: none;
+        }
+    
+    
+    }
+
+    #more {
+        padding-bottom: 3rem;
+    }
+
 }
